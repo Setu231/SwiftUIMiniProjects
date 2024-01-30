@@ -9,11 +9,13 @@ import SwiftUI
 
 struct DetailFrameworkView: View {
     
-    @Environment(\.openURL) var openURL
-    @Environment(\.colorScheme) var colorScheme
+//    Warning: "Kept for Alternate Method"
+//    @Environment(\.openURL) var openURL
+//    @Environment(\.colorScheme) var colorScheme
     
     var frameworkDetail: Framework
     @Binding var isDetailViewPresented: Bool
+    @State private var isSafariView = false
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -25,18 +27,20 @@ struct DetailFrameworkView: View {
                     } label: {
                         Image(systemName: "xmark")
                             .frame(width: 60, height: 60)
-                            .foregroundColor(colorScheme == .dark ? .white : .black)
+                            .foregroundColor(Color.black)
                     }
                 }
                 Spacer()
-                FrameworkGridView(frameworkItem: frameworkDetail)
+                FrameworkCollectionView(frameworkItem: frameworkDetail)
                 Spacer()
                 Text(frameworkDetail.description).padding()
                 Spacer()
                 Button {
-                    if let url = URL(string: frameworkDetail.urlString) {
-                        openURL(url)
-                    }
+                    //    Warning: "Kept for Alternate Method"
+//                    if let url = URL(string: frameworkDetail.urlString) {
+//                        openURL(url)
+//                    }
+                    isSafariView = true
                 } label: {
                     Text("Learn More")
                         .font(.title2)
@@ -47,6 +51,8 @@ struct DetailFrameworkView: View {
                         .cornerRadius(10)
                 }
                 Spacer()
+            }.sheet(isPresented: $isSafariView) {
+                SafariView(url: URL(string: frameworkDetail.urlString) ?? URL(fileURLWithPath: ""))
             }
         }
     }

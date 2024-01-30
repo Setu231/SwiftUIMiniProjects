@@ -15,8 +15,8 @@ struct SwiftUIMiniProjectsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AdaptiveSwitchCaseView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            BarcodeScanner()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

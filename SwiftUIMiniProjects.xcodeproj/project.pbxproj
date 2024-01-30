@@ -14,7 +14,7 @@
 		602581702B5F87E00015816D /* SwiftUIMiniProjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6025816F2B5F87E00015816D /* SwiftUIMiniProjectsTests.swift */; };
 		6025817A2B5F87E00015816D /* SwiftUIMiniProjectsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602581792B5F87E00015816D /* SwiftUIMiniProjectsUITests.swift */; };
 		6025817C2B5F87E00015816D /* SwiftUIMiniProjectsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6025817B2B5F87E00015816D /* SwiftUIMiniProjectsUITestsLaunchTests.swift */; };
-		602581892B5F88290015816D /* AppleFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602581882B5F88290015816D /* AppleFrameworkView.swift */; };
+		602581892B5F88290015816D /* GridAppleFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602581882B5F88290015816D /* GridAppleFrameworkView.swift */; };
 		6025818B2B5F88BF0015816D /* AppleFrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6025818A2B5F88BF0015816D /* AppleFrameworkModel.swift */; };
 		6025818D2B5F8FEB0015816D /* DetailFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6025818C2B5F8FEB0015816D /* DetailFrameworkView.swift */; };
 		6025818F2B5F98990015816D /* AppleFrameworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6025818E2B5F98990015816D /* AppleFrameworkViewModel.swift */; };
@@ -28,6 +28,14 @@
 		6065A00F2B65BF5000123D2E /* AdaptiveSwitchData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6065A00D2B65BF5000123D2E /* AdaptiveSwitchData+CoreDataProperties.swift */; };
 		6065A0112B65BF8000123D2E /* AdaptiveSwitchDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6065A0102B65BF8000123D2E /* AdaptiveSwitchDataController.swift */; };
 		6065A0132B65C15F00123D2E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6065A0122B65C15F00123D2E /* Persistence.swift */; };
+		60CD863E2B674C9500003533 /* FoodMartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD863D2B674C9500003533 /* FoodMartView.swift */; };
+		60CD86402B675F6300003533 /* FoodMartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD863F2B675F6300003533 /* FoodMartModel.swift */; };
+		60FC12F82B680E120022277A /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC12F72B680E120022277A /* SafariView.swift */; };
+		60FC12FC2B6821000022277A /* ListAppleFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC12FB2B6821000022277A /* ListAppleFrameworkView.swift */; };
+		60FC12FE2B6824670022277A /* DetailListFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC12FD2B6824670022277A /* DetailListFrameworkView.swift */; };
+		60FC13002B686EB60022277A /* BarcodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC12FF2B686EB60022277A /* BarcodeScanner.swift */; };
+		60FC13022B68715A0022277A /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC13012B68715A0022277A /* ScannerVC.swift */; };
+		60FC13042B6876DB0022277A /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC13032B6876DB0022277A /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +66,7 @@
 		602581752B5F87E00015816D /* SwiftUIMiniProjectsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIMiniProjectsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		602581792B5F87E00015816D /* SwiftUIMiniProjectsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMiniProjectsUITests.swift; sourceTree = "<group>"; };
 		6025817B2B5F87E00015816D /* SwiftUIMiniProjectsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMiniProjectsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		602581882B5F88290015816D /* AppleFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkView.swift; sourceTree = "<group>"; };
+		602581882B5F88290015816D /* GridAppleFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAppleFrameworkView.swift; sourceTree = "<group>"; };
 		6025818A2B5F88BF0015816D /* AppleFrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkModel.swift; sourceTree = "<group>"; };
 		6025818C2B5F8FEB0015816D /* DetailFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFrameworkView.swift; sourceTree = "<group>"; };
 		6025818E2B5F98990015816D /* AppleFrameworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkViewModel.swift; sourceTree = "<group>"; };
@@ -72,6 +80,14 @@
 		6065A00D2B65BF5000123D2E /* AdaptiveSwitchData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdaptiveSwitchData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6065A0102B65BF8000123D2E /* AdaptiveSwitchDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveSwitchDataController.swift; sourceTree = "<group>"; };
 		6065A0122B65C15F00123D2E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		60CD863D2B674C9500003533 /* FoodMartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMartView.swift; sourceTree = "<group>"; };
+		60CD863F2B675F6300003533 /* FoodMartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMartModel.swift; sourceTree = "<group>"; };
+		60FC12F72B680E120022277A /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		60FC12FB2B6821000022277A /* ListAppleFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppleFrameworkView.swift; sourceTree = "<group>"; };
+		60FC12FD2B6824670022277A /* DetailListFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListFrameworkView.swift; sourceTree = "<group>"; };
+		60FC12FF2B686EB60022277A /* BarcodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScanner.swift; sourceTree = "<group>"; };
+		60FC13012B68715A0022277A /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		60FC13032B6876DB0022277A /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +139,10 @@
 			isa = PBXGroup;
 			children = (
 				602581592B5F87DE0015816D /* SwiftUIMiniProjectsApp.swift */,
+				60FC13062B68844E0022277A /* Appetizers */,
 				6044C8532B66F43D006CE937 /* AdaptiveControl */,
 				60659FEE2B61BCB700123D2E /* AppleFramework */,
+				60FC13052B6884300022277A /* BarcodeScanner */,
 				60659FF22B61BEDC00123D2E /* CocktailAPI */,
 				60659FED2B61BCA400123D2E /* Weather */,
 				6065A0122B65C15F00123D2E /* Persistence.swift */,
@@ -207,9 +225,8 @@
 		60659FEE2B61BCB700123D2E /* AppleFramework */ = {
 			isa = PBXGroup;
 			children = (
-				60659FEF2B61BCD900123D2E /* View */,
-				60659FF02B61BCEB00123D2E /* ViewModel */,
-				60659FF12B61BCF500123D2E /* Model */,
+				60FC12F92B6820B80022277A /* GridAppleFrameworkView */,
+				60FC12FA2B6820CB0022277A /* ListAppleFrameworkView */,
 			);
 			path = AppleFramework;
 			sourceTree = "<group>";
@@ -217,8 +234,9 @@
 		60659FEF2B61BCD900123D2E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				602581882B5F88290015816D /* AppleFrameworkView.swift */,
+				602581882B5F88290015816D /* GridAppleFrameworkView.swift */,
 				6025818C2B5F8FEB0015816D /* DetailFrameworkView.swift */,
+				60FC12F72B680E120022277A /* SafariView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +281,44 @@
 				60659FF72B61BF9500123D2E /* CocktailModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		60FC12F92B6820B80022277A /* GridAppleFrameworkView */ = {
+			isa = PBXGroup;
+			children = (
+				60659FEF2B61BCD900123D2E /* View */,
+				60659FF02B61BCEB00123D2E /* ViewModel */,
+				60659FF12B61BCF500123D2E /* Model */,
+			);
+			path = GridAppleFrameworkView;
+			sourceTree = "<group>";
+		};
+		60FC12FA2B6820CB0022277A /* ListAppleFrameworkView */ = {
+			isa = PBXGroup;
+			children = (
+				60FC12FB2B6821000022277A /* ListAppleFrameworkView.swift */,
+				60FC12FD2B6824670022277A /* DetailListFrameworkView.swift */,
+			);
+			path = ListAppleFrameworkView;
+			sourceTree = "<group>";
+		};
+		60FC13052B6884300022277A /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				60FC12FF2B686EB60022277A /* BarcodeScanner.swift */,
+				60FC13032B6876DB0022277A /* ScannerView.swift */,
+				60FC13012B68715A0022277A /* ScannerVC.swift */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		60FC13062B68844E0022277A /* Appetizers */ = {
+			isa = PBXGroup;
+			children = (
+				60CD863D2B674C9500003533 /* FoodMartView.swift */,
+				60CD863F2B675F6300003533 /* FoodMartModel.swift */,
+			);
+			path = Appetizers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,19 +454,27 @@
 				6065A0132B65C15F00123D2E /* Persistence.swift in Sources */,
 				60659FFC2B65110B00123D2E /* AdaptiveSwitchCaseView.swift in Sources */,
 				60659FF42B61BF1600123D2E /* CocktailEntryVC.swift in Sources */,
+				60FC13002B686EB60022277A /* BarcodeScanner.swift in Sources */,
 				6025818B2B5F88BF0015816D /* AppleFrameworkModel.swift in Sources */,
 				6065A0112B65BF8000123D2E /* AdaptiveSwitchDataController.swift in Sources */,
 				6044C8552B6743ED006CE937 /* AdaptiveSwitchViewModel.swift in Sources */,
-				602581892B5F88290015816D /* AppleFrameworkView.swift in Sources */,
+				602581892B5F88290015816D /* GridAppleFrameworkView.swift in Sources */,
 				60659FF82B61BF9500123D2E /* CocktailModel.swift in Sources */,
+				60FC13042B6876DB0022277A /* ScannerView.swift in Sources */,
 				6025818F2B5F98990015816D /* AppleFrameworkViewModel.swift in Sources */,
 				6065A00E2B65BF5000123D2E /* AdaptiveSwitchData+CoreDataClass.swift in Sources */,
+				60FC12FC2B6821000022277A /* ListAppleFrameworkView.swift in Sources */,
 				6025815C2B5F87DE0015816D /* WeatherAppView.swift in Sources */,
+				60FC13022B68715A0022277A /* ScannerVC.swift in Sources */,
 				6065A00B2B65BEEA00123D2E /* SwitchModel.xcdatamodeld in Sources */,
+				60FC12F82B680E120022277A /* SafariView.swift in Sources */,
 				6025815A2B5F87DE0015816D /* SwiftUIMiniProjectsApp.swift in Sources */,
 				6025818D2B5F8FEB0015816D /* DetailFrameworkView.swift in Sources */,
 				60659FFA2B61D33300123D2E /* CocktailDetailScreen.swift in Sources */,
+				60FC12FE2B6824670022277A /* DetailListFrameworkView.swift in Sources */,
 				6065A00F2B65BF5000123D2E /* AdaptiveSwitchData+CoreDataProperties.swift in Sources */,
+				60CD863E2B674C9500003533 /* FoodMartView.swift in Sources */,
+				60CD86402B675F6300003533 /* FoodMartModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +636,7 @@
 				DEVELOPMENT_TEAM = Q2QM7U4MAB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use camera to scan a barcode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -601,6 +666,7 @@
 				DEVELOPMENT_TEAM = Q2QM7U4MAB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use camera to scan a barcode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

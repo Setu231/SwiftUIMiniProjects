@@ -7,19 +7,16 @@
 
 import SwiftUI
 
-struct AppleFrameworkView: View {
+struct GridAppleFrameworkView: View {
     
     @StateObject var appleFrameworkViewModel = AppleFrameworkViewModel()
-    
-    var columns: [GridItem] = [GridItem(.flexible()),
-                               GridItem(.flexible()),
-                               GridItem(.flexible())]
+
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false, content: {
-                LazyVGrid(columns: columns) {
+                LazyVGrid(columns: appleFrameworkViewModel.columns) {
                     ForEach(MockData.frameworks, id: \.id) { frameworkDetail in
-                        FrameworkGridView(frameworkItem: frameworkDetail)
+                        FrameworkCollectionView(frameworkItem: frameworkDetail)
                             .onTapGesture {
                                 appleFrameworkViewModel.selectedFramework = frameworkDetail
                             }
@@ -33,28 +30,45 @@ struct AppleFrameworkView: View {
     }
 }
 
-struct FrameworkGridView: View {
+struct FrameworkCollectionView: View {
+    
+    var frameworkItem: Framework
+    
+    var isVerticalStack = true
+    
+    var body: some View {
+        if isVerticalStack {
+            VStack {
+                FrameworkCollectionInnerView(frameworkItem: frameworkItem)
+            }
+        } else {
+            HStack {
+                FrameworkCollectionInnerView(frameworkItem: frameworkItem)
+            }
+        }
+    }
+}
+
+struct FrameworkCollectionInnerView: View {
     
     var frameworkItem: Framework
     
     var body: some View {
-        VStack {
-            Image(frameworkItem.imageName)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 90, height: 90)
-            
-            Text(frameworkItem.name)
-                .font(.title2)
-                .fontWeight(.medium)
-                .scaledToFit()
-                .minimumScaleFactor(0.6)
-        }
+        Image(frameworkItem.imageName)
+            .resizable()
+            .scaledToFit()
+            .frame(width: 90, height: 90)
+        
+        Text(frameworkItem.name)
+            .font(.title2)
+            .fontWeight(.medium)
+            .scaledToFit()
+            .minimumScaleFactor(0.6)
     }
 }
 
 struct AppleFrameworkView_Previews: PreviewProvider {
     static var previews: some View {
-        AppleFrameworkView()
+        GridAppleFrameworkView()
     }
 }
