@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-
 extension AdaptiveSwitchData {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<AdaptiveSwitchData> {

@@ -10,8 +10,8 @@ import CoreData
 struct PersistenceController {
     static let shared = PersistenceController()
 
-    static var preview: PersistenceController = {
-        let result = PersistenceController(inMemory: true)
+    static var switchPreview: PersistenceController = {
+        let result = PersistenceController(inMemory: true, containerName: "SwitchModel")
         let viewContext = result.container.viewContext
         for _ in 0..<1 {
             let newItem = AdaptiveSwitchData(context: viewContext)
@@ -30,7 +30,7 @@ struct PersistenceController {
 
     let container: NSPersistentContainer
 
-    init(inMemory: Bool = false) {
+    init(inMemory: Bool = false, containerName: String? = "") {
         container = NSPersistentContainer(name: "SwitchModel")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")

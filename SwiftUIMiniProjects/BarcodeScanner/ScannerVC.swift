@@ -8,23 +8,9 @@
 import UIKit
 import AVFoundation
 
-enum CameraError: String {
-    case invalidDeviceInput = "Something is wrong with the camera"
-    case invalidScannedValue = "Something is wrong with the scanned barcode"
-    case noError
-    
-    var title: String {
-        switch self {
-        case .invalidDeviceInput: return "Invalid Input"
-        case .invalidScannedValue: return "Invalid Scanner Value"
-        default: return ""
-        }
-    }
-}
-
 protocol ScannerVCDelegate: AnyObject {
     func didFind(barcode: String)
-    func didSurface(error: CameraError)
+    func didSurface(error: AlertItem)
 }
 
 final class ScannerVC: UIViewController {

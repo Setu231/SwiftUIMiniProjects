@@ -11,7 +11,7 @@ struct BarcodeScanner: View {
     
     @State private var scannedBarcodeValue = ""
     @State private var isAlertShown = false
-    @State private var isAlertData = CameraError.noError
+    @State private var isAlertData = AlertItem.noError
     
     var body: some View {
         NavigationView {

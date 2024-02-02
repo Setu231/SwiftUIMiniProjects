@@ -13,9 +13,11 @@ struct SwiftUIMiniProjectsApp: App {
     
     let persistenceController = PersistenceController.shared
     
+    var orderViewModel = OrderViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            BarcodeScanner()
+            AppetizerTabView().environmentObject(orderViewModel)
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

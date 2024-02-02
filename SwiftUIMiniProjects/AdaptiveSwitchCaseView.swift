@@ -113,6 +113,6 @@ struct AdaptiveSwitchGridView: View {
 
 struct AdaptiveSwitchCaseView_Previews: PreviewProvider {
     static var previews: some View {
-        AdaptiveSwitchCaseView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        AdaptiveSwitchCaseView().environment(\.managedObjectContext, PersistenceController.switchPreview.container.viewContext)
     }
 }

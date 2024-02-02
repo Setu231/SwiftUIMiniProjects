@@ -11,7 +11,7 @@ struct ScannerView: UIViewControllerRepresentable {
     
     @Binding var scannerValue: String
     @Binding var alertItem: Bool
-    @Binding var alertErrorData: CameraError
+    @Binding var alertErrorData: AlertItem
     
     func makeUIViewController(context: Context) -> ScannerVC {
         ScannerVC(scannerDelegate: context.coordinator)
@@ -35,7 +35,7 @@ struct ScannerView: UIViewControllerRepresentable {
             scannerView.scannerValue = barcode
         }
         
-        func didSurface(error: CameraError) {
+        func didSurface(error: AlertItem) {
             scannerView.alertItem = true
             scannerView.alertErrorData = .invalidDeviceInput
         }
