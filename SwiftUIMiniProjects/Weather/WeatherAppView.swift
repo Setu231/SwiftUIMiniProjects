@@ -57,8 +57,7 @@ struct WeatherDaysView: View {
             weatherImage
                 .renderingMode(.original)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 40, height: 40)
+                .customStyle(width: 40, height: 40)
                 .foregroundColor(.white)
             
             temperature
@@ -84,8 +83,7 @@ struct WeatherTitleView: View {
             weatherImage
                 .renderingMode(.original)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 120, height: 120)
+                .customStyle(width: 120, height: 120)
                 .foregroundColor(.white)
             
             temperature

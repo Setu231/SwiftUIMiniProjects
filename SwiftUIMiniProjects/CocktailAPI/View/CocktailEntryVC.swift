@@ -21,7 +21,7 @@ struct CocktailEntryVC: View {
             }.navigationDestination(for: Drinks.self) { item in
                 CocktailDetailScreen(drinkItem: item)
             }
-        }.onAppear {
+        }.task {
             taskFetchData()
         }
     }

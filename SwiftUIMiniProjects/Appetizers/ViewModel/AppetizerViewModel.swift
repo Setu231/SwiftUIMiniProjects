@@ -17,12 +17,10 @@ final class AppetizerViewModel: ObservableObject {
     
     func fetchDataCall() {
         isLoading = true
-        DispatchQueue.main.async {
-            Task {
-                let urlData = try await NetworkManager.shared.getURLData()
-                self.isLoading = false
-                self.appetizerList = urlData.request ?? []
-            }
+        Task {
+            let urlData = try await NetworkManager.shared.getURLData()
+            self.isLoading = false
+            self.appetizerList = urlData.request ?? []
         }
     }
 }

@@ -92,10 +92,8 @@ struct AdaptiveSwitchGridView: View {
                 .shadow(color: .black.opacity(0.01), radius: 6, x: 0, y: 0)
             
             VStack(alignment: .leading, spacing: 10) {
-                Image(systemName: frameworkItem.isSwitchOn ? "lightswitch.on" : "lightswitch.off")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 35, height: 35, alignment: .leading)
+                APImage(systemName: frameworkItem.isSwitchOn ? "lightswitch.on" : "lightswitch.off")
+                    .customStyle(width: 35, height: 35, alignment: .leading)
                     
                 Text(frameworkItem.switchName ?? "")
                     .fixedSize(horizontal: false, vertical: true)

@@ -22,19 +22,20 @@ struct AccountView: View {
                         .autocorrectionDisabled()
                         .textInputAutocapitalization(.none)
                     DatePicker("Enter Birth Date", selection: $accountViewModel.userDetails.birthdate, in: ...(accountViewModel.lowerBoundDate ?? Date()), displayedComponents: .date)
-                    Button {
-                        accountViewModel.saveChanges()
-                    } label: {
-                        Text("Save Changes")
-                            .foregroundColor(Color("brandColor"))
-                    }
                 }
                 
                 Section(header: Text("Requests")) {
                     Toggle("Extra Napkins", isOn: $accountViewModel.userDetails.isNapkinRequired)
-                        .tint(Color("brandColor"))
+                        .tint(Color.appetizerBrandColor)
+                        .toggleStyle(.switch)
                     Toggle("Frequent Refill", isOn: $accountViewModel.userDetails.isRefillRequired)
-                        .tint(Color("brandColor"))
+                        .tint(Color.appetizerBrandColor)
+                    Button {
+                        accountViewModel.saveChanges()
+                    } label: {
+                        Text("Save Changes")
+                            .foregroundColor(Color.appetizerBrandColor)
+                    }
                 }
             }
             .onAppear {

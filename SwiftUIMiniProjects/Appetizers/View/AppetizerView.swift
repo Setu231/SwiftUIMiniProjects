@@ -29,7 +29,7 @@ struct AppetizerView: View {
                 .navigationTitle("🍟 Appetizers")
                 .listStyle(PlainListStyle())
             }
-            .onAppear {
+            .task {
                 appetizerViewModel.isLoading = true
                 appetizerViewModel.fetchDataCall()
             }
@@ -52,7 +52,7 @@ struct AppetizerListCellView: View {
     var body: some View {
         HStack {
             AppetizerImageView(urlString: appetizer.imageURL ?? "")
-                .foregroundColor(Color("brandColor"))
+                .foregroundColor(Color.appetizerBrandColor)
                 .scaledToFit()
                 .cornerRadius(8)
                 .frame(width: 120, height: 90)
@@ -76,7 +76,7 @@ struct AppetizerImageView: View {
     var body: some View {
         Image(uiImage: appetizerImageViewModel.appetizerImage)
             .resizable()
-            .onAppear {
+            .task {
                 appetizerImageViewModel.getAppetizerImage(urlString: urlString)
             }
     }
@@ -148,7 +148,7 @@ struct AppetizerDetailView: View {
                     .fontWeight(.semibold)
                     .frame(width: 260, height: 50)
                     .foregroundColor(Color.white)
-                    .background(Color("brandColor"))
+                    .background(Color.appetizerBrandColor)
                     .cornerRadius(10)
             }
             .padding(.bottom, 30)

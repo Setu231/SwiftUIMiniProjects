@@ -17,7 +17,8 @@ struct SwiftUIMiniProjectsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AppetizerTabView().environmentObject(orderViewModel)
+            DraggableJiraView()
+            //AppetizerTabView().environmentObject(orderViewModel)
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

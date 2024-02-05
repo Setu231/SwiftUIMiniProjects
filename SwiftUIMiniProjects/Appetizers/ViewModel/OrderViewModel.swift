@@ -10,10 +10,7 @@ import Foundation
 final class OrderViewModel: ObservableObject {
     
     @Published var selectedAppetizersList = [Appetizer]()
-    
-    var isOrderListEmpty: Bool {
-        selectedAppetizersList.isEmpty
-    }
+    @Published var isOrderListEmpty = false
     
     var totalPrice: Double {
         selectedAppetizersList.reduce(0, { $0 + ($1.price ?? 0.0) })

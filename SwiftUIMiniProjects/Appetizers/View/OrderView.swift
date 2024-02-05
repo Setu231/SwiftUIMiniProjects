@@ -15,11 +15,9 @@ struct OrderView: View {
         ZStack {
             if orderViewModel.isOrderListEmpty {
                 VStack {
-                    Image(systemName: "scroll")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 120, height: 200)
-                        .tint(Color("brandColor"))
+                    APImage(systemName: "scroll")
+                        .customStyle(width: 120, height: 200)
+                        .tint(Color.appetizerBrandColor)
                     Text("The Order List is Empty")
                 }
             } else {
@@ -41,7 +39,7 @@ struct OrderView: View {
                                 .fontWeight(.semibold)
                                 .frame(width: 260, height: 50)
                                 .foregroundColor(Color.white)
-                                .background(Color("brandColor"))
+                                .background(Color.appetizerBrandColor)
                                 .cornerRadius(10)
                         }
                     }

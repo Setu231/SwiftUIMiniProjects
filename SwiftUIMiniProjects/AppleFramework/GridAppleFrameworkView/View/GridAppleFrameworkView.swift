@@ -56,8 +56,7 @@ struct FrameworkCollectionInnerView: View {
     var body: some View {
         Image(frameworkItem.imageName)
             .resizable()
-            .scaledToFit()
-            .frame(width: 90, height: 90)
+            .customStyle(width: 90, height: 90)
         
         Text(frameworkItem.name)
             .font(.title2)
@@ -70,5 +69,24 @@ struct FrameworkCollectionInnerView: View {
 struct AppleFrameworkView_Previews: PreviewProvider {
     static var previews: some View {
         GridAppleFrameworkView()
+    }
+}
+
+struct APFitImage: ViewModifier {
+    
+    var width: CGFloat
+    var height: CGFloat
+    var alignment: Alignment
+    
+    func body(content: Content) -> some View {
+        content
+            .scaledToFit()
+            .frame(width: width, height: height, alignment: alignment)
+    }
+}
+
+extension View {
+    func customStyle(width: CGFloat, height: CGFloat, alignment: Alignment = .center) -> some View {
+        modifier(APFitImage(width: width, height: height, alignment: alignment))
     }
 }

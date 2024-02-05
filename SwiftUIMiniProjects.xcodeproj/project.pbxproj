@@ -39,6 +39,14 @@
 		6081C0B22B6C8FD6009D3411 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6081C0B12B6C8FD6009D3411 /* AccountViewModel.swift */; };
 		6081C0B42B6C8FE1009D3411 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6081C0B32B6C8FE1009D3411 /* OrderViewModel.swift */; };
 		6081C0B62B6C908F009D3411 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6081C0B52B6C908F009D3411 /* AlertItem.swift */; };
+		608884192B6DA54500FC2C4E /* ImageUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608884182B6DA54500FC2C4E /* ImageUtilities.swift */; };
+		6088841B2B6DA73D00FC2C4E /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6088841A2B6DA73D00FC2C4E /* Color+Extension.swift */; };
+		6088841D2B6DD7A600FC2C4E /* GeometryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6088841C2B6DD7A600FC2C4E /* GeometryView.swift */; };
+		6088841F2B6DDA1700FC2C4E /* DraggableJiraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6088841E2B6DDA1700FC2C4E /* DraggableJiraView.swift */; };
+		608884262B70487C00FC2C4E /* Jira.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608884252B70487C00FC2C4E /* Jira.swift */; };
+		608884282B70557D00FC2C4E /* DraggableJiraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608884272B70557D00FC2C4E /* DraggableJiraModel.swift */; };
+		6088842A2B7055A100FC2C4E /* DraggableJiraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608884292B7055A100FC2C4E /* DraggableJiraViewModel.swift */; };
+		6088842C2B7055EA00FC2C4E /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6088842B2B7055EA00FC2C4E /* DraggableView.swift */; };
 		60CD863E2B674C9500003533 /* ConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD863D2B674C9500003533 /* ConversionView.swift */; };
 		60CD86402B675F6300003533 /* AppetizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD863F2B675F6300003533 /* AppetizerViewModel.swift */; };
 		60FC12F82B680E120022277A /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC12F72B680E120022277A /* SafariView.swift */; };
@@ -102,6 +110,15 @@
 		6081C0B12B6C8FD6009D3411 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		6081C0B32B6C8FE1009D3411 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		6081C0B52B6C908F009D3411 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		608884182B6DA54500FC2C4E /* ImageUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtilities.swift; sourceTree = "<group>"; };
+		6088841A2B6DA73D00FC2C4E /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		6088841C2B6DD7A600FC2C4E /* GeometryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryView.swift; sourceTree = "<group>"; };
+		6088841E2B6DDA1700FC2C4E /* DraggableJiraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableJiraView.swift; sourceTree = "<group>"; };
+		608884242B6F5AAC00FC2C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		608884252B70487C00FC2C4E /* Jira.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jira.swift; sourceTree = "<group>"; };
+		608884272B70557D00FC2C4E /* DraggableJiraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableJiraModel.swift; sourceTree = "<group>"; };
+		608884292B7055A100FC2C4E /* DraggableJiraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableJiraViewModel.swift; sourceTree = "<group>"; };
+		6088842B2B7055EA00FC2C4E /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 		60CD863D2B674C9500003533 /* ConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionView.swift; sourceTree = "<group>"; };
 		60CD863F2B675F6300003533 /* AppetizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerViewModel.swift; sourceTree = "<group>"; };
 		60FC12F72B680E120022277A /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -171,7 +188,10 @@
 		602581582B5F87DE0015816D /* SwiftUIMiniProjects */ = {
 			isa = PBXGroup;
 			children = (
+				608884242B6F5AAC00FC2C4E /* Info.plist */,
 				602581592B5F87DE0015816D /* SwiftUIMiniProjectsApp.swift */,
+				608884322B70643B00FC2C4E /* GeometryReaders */,
+				6088842D2B70562A00FC2C4E /* Jira */,
 				6081C0AE2B6C8F9B009D3411 /* Utilities */,
 				60210B7C2B697FAF00F25995 /* Appetizers */,
 				60FC13062B68844E0022277A /* Conversion */,
@@ -351,9 +371,63 @@
 			isa = PBXGroup;
 			children = (
 				6081C0AF2B6C8FAF009D3411 /* String+Extension.swift */,
+				6088841A2B6DA73D00FC2C4E /* Color+Extension.swift */,
 				6081C0B52B6C908F009D3411 /* AlertItem.swift */,
+				608884182B6DA54500FC2C4E /* ImageUtilities.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6088842D2B70562A00FC2C4E /* Jira */ = {
+			isa = PBXGroup;
+			children = (
+				608884312B70566900FC2C4E /* Extra */,
+				608884302B70564E00FC2C4E /* Model */,
+				6088842F2B70563C00FC2C4E /* ViewModel */,
+				6088842E2B70563000FC2C4E /* View */,
+			);
+			path = Jira;
+			sourceTree = "<group>";
+		};
+		6088842E2B70563000FC2C4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6088841E2B6DDA1700FC2C4E /* DraggableJiraView.swift */,
+				6088842B2B7055EA00FC2C4E /* DraggableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6088842F2B70563C00FC2C4E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				608884292B7055A100FC2C4E /* DraggableJiraViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		608884302B70564E00FC2C4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				608884272B70557D00FC2C4E /* DraggableJiraModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		608884312B70566900FC2C4E /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				608884252B70487C00FC2C4E /* Jira.swift */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		608884322B70643B00FC2C4E /* GeometryReaders */ = {
+			isa = PBXGroup;
+			children = (
+				6088841C2B6DD7A600FC2C4E /* GeometryView.swift */,
+			);
+			path = GeometryReaders;
 			sourceTree = "<group>";
 		};
 		60FC12F92B6820B80022277A /* GridAppleFrameworkView */ = {
@@ -525,6 +599,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6065A0132B65C15F00123D2E /* Persistence.swift in Sources */,
+				608884192B6DA54500FC2C4E /* ImageUtilities.swift in Sources */,
+				6088842C2B7055EA00FC2C4E /* DraggableView.swift in Sources */,
 				60659FFC2B65110B00123D2E /* AdaptiveSwitchCaseView.swift in Sources */,
 				60659FF42B61BF1600123D2E /* CocktailEntryVC.swift in Sources */,
 				60FC13002B686EB60022277A /* BarcodeScanner.swift in Sources */,
@@ -534,24 +610,30 @@
 				60210B802B69843A00F25995 /* AppetizerTabView.swift in Sources */,
 				6065A0112B65BF8000123D2E /* AdaptiveSwitchDataController.swift in Sources */,
 				6044C8552B6743ED006CE937 /* AdaptiveSwitchViewModel.swift in Sources */,
+				608884262B70487C00FC2C4E /* Jira.swift in Sources */,
 				60210B7E2B6982B800F25995 /* ConversionViewModel.swift in Sources */,
 				602581892B5F88290015816D /* GridAppleFrameworkView.swift in Sources */,
 				6081C0AB2B6C8F29009D3411 /* NetworkManager.swift in Sources */,
+				6088841B2B6DA73D00FC2C4E /* Color+Extension.swift in Sources */,
+				608884282B70557D00FC2C4E /* DraggableJiraModel.swift in Sources */,
 				60659FF82B61BF9500123D2E /* CocktailModel.swift in Sources */,
 				60FC13042B6876DB0022277A /* ScannerView.swift in Sources */,
 				6025818F2B5F98990015816D /* AppleFrameworkViewModel.swift in Sources */,
 				6081C0B22B6C8FD6009D3411 /* AccountViewModel.swift in Sources */,
+				6088841F2B6DDA1700FC2C4E /* DraggableJiraView.swift in Sources */,
 				6081C0B02B6C8FAF009D3411 /* String+Extension.swift in Sources */,
 				6065A00E2B65BF5000123D2E /* AdaptiveSwitchData+CoreDataClass.swift in Sources */,
 				60FC12FC2B6821000022277A /* ListAppleFrameworkView.swift in Sources */,
 				6025815C2B5F87DE0015816D /* WeatherAppView.swift in Sources */,
 				60FC13022B68715A0022277A /* ScannerVC.swift in Sources */,
 				60210B822B69845A00F25995 /* AppetizerView.swift in Sources */,
+				6088842A2B7055A100FC2C4E /* DraggableJiraViewModel.swift in Sources */,
 				6065A00B2B65BEEA00123D2E /* SwitchModel.xcdatamodeld in Sources */,
 				6081C0AD2B6C8F5D009D3411 /* AppetizerModel.swift in Sources */,
 				60FC12F82B680E120022277A /* SafariView.swift in Sources */,
 				6025815A2B5F87DE0015816D /* SwiftUIMiniProjectsApp.swift in Sources */,
 				6025818D2B5F8FEB0015816D /* DetailFrameworkView.swift in Sources */,
+				6088841D2B6DD7A600FC2C4E /* GeometryView.swift in Sources */,
 				6081C0B62B6C908F009D3411 /* AlertItem.swift in Sources */,
 				60659FFA2B61D33300123D2E /* CocktailDetailScreen.swift in Sources */,
 				60FC12FE2B6824670022277A /* DetailListFrameworkView.swift in Sources */,
@@ -720,6 +802,7 @@
 				DEVELOPMENT_TEAM = Q2QM7U4MAB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIMiniProjects/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use camera to scan a barcode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -750,6 +833,7 @@
 				DEVELOPMENT_TEAM = Q2QM7U4MAB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIMiniProjects/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use camera to scan a barcode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
